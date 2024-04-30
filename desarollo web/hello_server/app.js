@@ -12,7 +12,7 @@ app.get(
     }
 );
 
-app.get("/helo/:name",(req, res)=>{
+app.get("/hello/:name",(req, res)=>{
     console.log(req.params);
     const salute = "hello" + req.params.name 
     res.status(200).send(salute)
